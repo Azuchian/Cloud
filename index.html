@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>72-Hour Automation Sprint</title>
+<meta name="description" content="Fixed-price automation of your most painful admin task, live in 72 hours, guaranteed.">
+<style>
+  :root { --bg:#fafaf7; --fg:#1a1a1a; --muted:#5a5a5a; --accent:#0b6e4f; --card:#ffffff; --line:#e4e4de; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#121412; --fg:#ecece8; --muted:#a8a8a2; --accent:#3fbf8f; --card:#1b1e1c; --line:#2c302d; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  main { max-width:860px; margin:0 auto; padding:48px 16px 80px; }
+  h1 { font-size:clamp(2rem,5vw,3rem); line-height:1.15; margin:0 0 16px; }
+  h2 { margin-top:56px; }
+  .lead { font-size:1.2rem; color:var(--muted); }
+  .btn { display:inline-block; background:var(--accent); color:#fff; padding:14px 22px; border-radius:8px; text-decoration:none; font-weight:600; margin:8px 8px 0 0; }
+  .btn.alt { background:transparent; color:var(--accent); border:2px solid var(--accent); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:24px; }
+  .price { font-size:2rem; font-weight:700; }
+  ul { padding-left:20px; }
+  .note { color:var(--muted); font-size:.95rem; }
+</style>
+</head>
+<body>
+<main>
+  <p class="note">Only 4 spots this week</p>
+  <h1>Your most annoying weekly task, automated in 72 hours.</h1>
+  <p class="lead">Quote follow-ups, invoice chasing, lead intake, review requests. Built in the tools you already use. Fixed price. If it doesn't save you 5+ hours a month, you get a full refund.</p>
+  <!-- Replace both hrefs with your Cal.com booking link and Stripe Payment Link -->
+  <a class="btn" href="https://cal.com/YOUR-LINK">Book a 15-min call</a>
+  <a class="btn alt" href="#pricing">See pricing</a>
+
+  <h2>What I automate</h2>
+  <div class="grid">
+    <div class="card"><strong>Quote follow-up</strong><p>Every quote gets a reply within 5 minutes, then follow-ups on day 2 and day 5. Fewer jobs slip away.</p></div>
+    <div class="card"><strong>Invoice chasing</strong><p>Polite automatic reminders for overdue invoices, so you get paid without awkward calls.</p></div>
+    <div class="card"><strong>Reviews on autopilot</strong><p>Each finished job triggers a review request by text, so your Google rating keeps climbing.</p></div>
+    <div class="card"><strong>AI reply assistant</strong><p>Drafts answers to customer FAQs in your voice. You approve each one with a click.</p></div>
+  </div>
+
+  <h2 id="pricing">Pricing (CAD)</h2>
+  <div class="grid">
+    <div class="card">
+      <div>Sprint</div><div class="price">$2,500</div>
+      <ul><li>1 workflow automated</li><li>Live in 72 hours</li><li>Video walkthrough + edit guide</li></ul>
+      <a class="btn" href="https://buy.stripe.com/YOUR-2500-LINK">Start my Sprint</a>
+    </div>
+    <div class="card">
+      <div>Sprint+</div><div class="price">$5,000</div>
+      <ul><li>3 workflows automated</li><li>AI reply assistant trained on your FAQs</li><li>30 days of fixes included</li></ul>
+      <a class="btn" href="https://buy.stripe.com/YOUR-5000-LINK">Start Sprint+</a>
+    </div>
+  </div>
+  <p class="note">Prefer Interac e-Transfer? Pay 60% today and 40% on delivery. Email <a href="mailto:you@example.com">you@example.com</a>.</p>
+
+  <h2>The guarantee</h2>
+  <p>If the automation doesn't save you at least 5 hours a month within 30 days, I refund every dollar.</p>
+
+  <h2>How it works</h2>
+  <ol><li><strong>15-min call.</strong> We pick the task that costs you the most time.</li><li><strong>Day 1–2.</strong> I build and test it in your tools.</li><li><strong>Day 3.</strong> It goes live, I walk you through it, and you own it.</li></ol>
+
+  <p class="note">© <span id="y"></span> [Your Name] · [City], Canada</p>
+</main>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
